@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+let program = require('commander')
+let package = require('./package.json')
+let init = require('./bin/init')
+let list = require('./bin/list')
+
+program
+    .version(package.version)
+    .usage('<command> [options]')
+
+program
+    .command('init (template)')
+    .description('创建新项目')
+    .alias('i')
+    .action(function(template) {
+        init(template)
+    })
+
+program
+    .command('list')
+    .description('显示可用的模版列表')
+    .alias('l')
+    .action(function() {
+        list()
+    })
+
+program.parse(process.argv)
+if(program.args.length === 0) {
+    program.help()
+}

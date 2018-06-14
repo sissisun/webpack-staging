@@ -1,0 +1,25 @@
+{
+  "name": "point",
+  "version": "0.0.1",
+  "description": "staging",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "co": "^4.6.0",
+    "co-fs": "^1.2.0",
+    "commander": "^2.15.1",
+    "download-git-repo": "^1.0.2",
+    "inquirer": "^6.0.0",
+    "ncp": "^2.0.0",
+    "ora": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "point": "point"
+  },
+  "author": "",
+  "license": "ISC"
+}
